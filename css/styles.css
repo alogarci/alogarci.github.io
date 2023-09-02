@@ -3,21 +3,22 @@
     src: url('../fonts/Helvetica.otf') format('truetype');
 }
 
-@font-face{
+@font-face {
     font-family: 'HelveticaLTStd-Light';
     src: url('../fonts/HelveticaLTStd-Light.otf') format('truetype');
 }
 
-h1{
+h1 {
     font-size: 60px;
 }
 
-p{
+p {
     font-size: 25px;
 }
 
 
-body,ul {
+body,
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -41,8 +42,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
 }
 
 .logo a {
@@ -68,11 +67,11 @@ header {
     color: #FF6150;
 }
 
-#main{
+#main {
     margin: 100px;
 }
 
-#Introduccion{
+#Introduccion {
     display: flex;
     flex-direction: row;
     align-content: center;
