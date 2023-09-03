@@ -39,7 +39,7 @@ ul {
 
 body {
     font-family: 'HelveticaLTStd-Light', sans-seriff;
-    background-color: #E0E0E5;
+    background-color: #F5F5FA;
 }
 
 header {
@@ -107,48 +107,43 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow: hidden
 }
 
 .proyecto-music {
+    position: relative;
     width: 22%;
+    margin:1vh;
     transition: transform 0.3s ease;
-}
-
-.proyecto-music img{
-    width: 100%;
-    height: auto;
 }
 
 .proyecto-music:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
-.panel-emergente {
-    position: fixed;
+.proyecto-music-img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.proyecto-music-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: white;
+    background-color: rgba(255, 97, 80, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.panel-contenido {
-    display: none;
-    background-color: rgba(255, 97, 80, 0.6);
-    width: 140vh;
-    height: 80vh;
-    padding: 20px;
-    border-radius: 5px;
-    position: relative;
-    text-align: center;
-}
-
-.cerrar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
+.proyecto-music-text:hover {
+    opacity: 1;
 }
