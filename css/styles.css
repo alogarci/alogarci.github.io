@@ -26,6 +26,10 @@ h3 {
     font-size: 40px;
 }
 
+h4{
+    font-size:35px;
+}
+
 p {
     font-size: 25px;
 }
@@ -50,10 +54,10 @@ header {
 }
 
 .navbar {
-    max-width: 1200px;
-    margin: auto;
+    margin-left: 10vh;
+    margin-right: 10vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -74,14 +78,35 @@ header {
     color: #FAFAFF;
     font-size: 20px;
     transition: color 0.3s;
+    transition: font-size 0.3s;
 }
 
 .menu a:hover {
+    font-size: 25px;
     color: #FF6150;
 }
 
+.idiomas {
+    display: flex;
+    flex-direction: row;
+}
+
+.flag img {
+    margin: 1vh;
+    width: 5vh;
+    height: 3vh;
+    transition: transform 0.3s ease;
+}
+
+.flag img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 .main {
-    margin: 7vh;
+    margin-top: 5vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
 }
 
 #Introduccion {
@@ -92,14 +117,14 @@ header {
 }
 
 .proyecto-games {
-    margin-left: 40vh;
-    margin-right: 40vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
     display: flex;
     flex direction: row;
     align-items: center;
 }
 
-.multimedia-proyecto-games{
+.multimedia-proyecto-games {
     transition: transform 0.3s ease;
 }
 
@@ -142,7 +167,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -161,10 +187,22 @@ header {
     opacity: 1;
 }
 
-.contact-elements{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+.footer-text {
+    font-size: 16px;
 }
 
+#icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    margin: 0.7vh;
+    width: 4vh;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
