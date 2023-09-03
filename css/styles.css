@@ -8,14 +8,27 @@
     src: url('../fonts/HelveticaLTStd-Light.otf') format('truetype');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     font-size: 60px;
+}
+
+h2 {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 40px;
 }
 
 p {
     font-size: 25px;
 }
-
 
 body,
 ul {
@@ -67,8 +80,8 @@ header {
     color: #FF6150;
 }
 
-#main {
-    margin: 100px;
+.main {
+    margin: 7vh;
 }
 
 #Introduccion {
@@ -76,4 +89,66 @@ header {
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
+}
+
+.proyecto-games {
+    margin-left: 40vh;
+    margin-right: 40vh;
+    display: flex;
+    flex direction: row;
+    align-items: center;
+}
+
+.texto-proyecto-games {
+    margin: 3vh;
+}
+
+.proyectos-music {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proyecto-music {
+    width: 22%;
+    transition: transform 0.3s ease;
+}
+
+.proyecto-music img{
+    width: 100%;
+    height: auto;
+}
+
+.proyecto-music:hover {
+    transform: scale(1.05);
+}
+
+.panel-emergente {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-contenido {
+    display: none;
+    background-color: rgba(255, 97, 80, 0.6);
+    width: 140vh;
+    height: 80vh;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
