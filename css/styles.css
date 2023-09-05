@@ -116,6 +116,16 @@ header {
     justify-content: space-between;
 }
 
+#sobremi{
+    display: flex;
+    flex-direction: row;
+}
+
+#alonso_01{
+    width: 50vh;
+    margin-right: 2vh;
+}
+
 .proyecto-games {
     margin-left: 20vh;
     margin-right: 20vh;
