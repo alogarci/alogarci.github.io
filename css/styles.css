@@ -8,30 +8,42 @@
     src: url('../fonts/HelveticaLTStd-Light.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'BaskervilleBold';
+    src: url('../fonts/BaskervilleBold.ttf') format('truetype');
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 h1 {
+    font-family: 'BaskervilleBold', serif;
     font-size: 60px;
+    margin-bottom: 0vh;
 }
 
 h2 {
+    font-family: 'BaskervilleBold', serif;
     font-size: 60px;
     display: flex;
     justify-content: center;
+    margin-bottom: 0vh;
 }
 
 h3 {
     font-size: 40px;
+    margin-bottom: 0vh;
 }
 
-h4{
-    font-size:35px;
+h4 {
+    font-size: 35px;
+    margin-bottom: 0vh;
+    margin-top: 2vh;
 }
 
 p {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 body,
@@ -50,7 +62,7 @@ header {
     font-family: 'Helvetica', sans-seriff;
     background-color: #1e1e1e;
     color: #FAFAFF;
-    padding: 20px;
+    padding: 6px;
 }
 
 .navbar {
@@ -104,24 +116,79 @@ header {
 }
 
 .main {
-    margin-top: 5vh;
     margin-left: 20vh;
     margin-right: 20vh;
 }
 
 #Introduccion {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
+    position: relative;
+    display: inline-block;
 }
 
-#sobremi{
+#main-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#overlay-text {
+    max-width: 50%;
+}
+
+.carousel {
+    width: 700px;
+    /* Ancho del carrusel */
+    overflow: hidden;
+    /* Oculta el contenido que se desborda */
+    position: relative;
+}
+
+/* Estilos para la lista de imágenes */
+.carousel-container {
+    display: flex;
+    /* Muestra las imágenes en una fila */
+    transition: transform 0.5s;
+    /* Agrega una transición suave al cambiar las imágenes */
+}
+
+/* Estilos para las imágenes individuales */
+.carousel-slide {
+    flex: 0 0 100%;
+    /* Cada imagen ocupa el 100% del ancho del carrusel */
+    max-width: 100%;
+    /* Ajusta el tamaño máximo de la imagen */
+}
+
+/* Estilos para los botones de navegación */
+.carousel-button {
+    cursor: pointer;
+}
+
+/* Estilos para el botón de siguiente */
+.next-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* Estilos para el botón de anterior */
+.prev-button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+#sobremi {
     display: flex;
     flex-direction: row;
 }
 
-#alonso_01{
+#alonso_01 {
     width: 50vh;
     margin-right: 2vh;
 }
@@ -198,7 +265,7 @@ header {
 }
 
 .footer-text {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #icons {
