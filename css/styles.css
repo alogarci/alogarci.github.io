@@ -17,6 +17,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/*Para PC*/
 @media screen and (max-width:1920px) {
 
     h1 {
@@ -155,51 +156,6 @@ html {
         max-width: 50%;
     }
 
-    .carousel {
-        width: 700px;
-        /* Ancho del carrusel */
-        overflow: hidden;
-        /* Oculta el contenido que se desborda */
-        position: relative;
-    }
-
-    /* Estilos para la lista de imágenes */
-    .carousel-container {
-        display: flex;
-        /* Muestra las imágenes en una fila */
-        transition: transform 0.5s;
-        /* Agrega una transición suave al cambiar las imágenes */
-    }
-
-    /* Estilos para las imágenes individuales */
-    .carousel-slide {
-        flex: 0 0 100%;
-        /* Cada imagen ocupa el 100% del ancho del carrusel */
-        max-width: 100%;
-        /* Ajusta el tamaño máximo de la imagen */
-    }
-
-    /* Estilos para los botones de navegación */
-    .carousel-button {
-        cursor: pointer;
-    }
-
-    /* Estilos para el botón de siguiente */
-    .next-button {
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        transform: translateY(-50%);
-    }
-
-    /* Estilos para el botón de anterior */
-    .prev-button {
-        position: absolute;
-        top: 50%;
-        left: 10px;
-        transform: translateY(-50%);
-    }
-
     #sobremi {
         display: flex;
         flex-direction: row;
@@ -302,6 +258,7 @@ html {
     }
 }
 
+/*Para iPad*/
 @media screen and (max-width:1130px) {
 
     h1 {
@@ -340,14 +297,15 @@ html {
     .menu {
         display: none;
         flex-direction: column;
-        background-color: #FAFAFF;
+        background-color: #1e1e1e;
         position: absolute;
-        top: 60px;
+        top: 40px;
         right: 0;
         width: 100%;
         padding: 10px;
-        text-align: right;
-        z-index: 999;
+        text-align: center;
+        z-index: 100;
+        transition: 0.8s;
     }
 
     .menu.active {
@@ -387,7 +345,7 @@ html {
     }
 
     .logo a {
-        font-size: 30px;
+        font-size: 20px;
         text-decoration: none;
         color: #FAFAFF;
         font-weight: bold;
@@ -432,4 +390,130 @@ html {
         margin-right: 2vh;
     }
 
+    #Introduccion {
+        position: relative;
+        display: inline-block;
+    }
+
+    #main-overlay {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #overlay-text {
+        max-width: 100%;
+    }
+
+    #sobremi {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #sobre-mi-img{
+        height: 710px;
+        overflow: hidden;
+    }
+
+    #alonso_01 {
+        width: 60vh;
+        margin-right: 0vh;
+    }
+
+    .proyecto-games {
+        margin-left: 2vh;
+        margin-right: 2vh;
+        display: flex;
+        flex direction: row;
+        align-items: center;
+    }
+
+    .multimedia-proyecto-games {
+        transition: transform 0.3s ease;
+    }
+
+    .multimedia-proyecto-games:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .texto-proyecto-games {
+        margin: 3vh;
+    }
+
+    .proyectos-music {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow: hidden
+    }
+
+    .proyecto-music {
+        position: relative;
+        width: 30%;
+        margin: 1vh;
+        transition: transform 0.3s ease;
+    }
+
+    .proyecto-music:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .proyecto-music-img {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    .proyecto-music-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .proyecto-music-text {
+        color: #FAFAFF;
+    }
+
+    .proyecto-music-panel:hover {
+        opacity: 1;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    #icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .icon {
+        margin: 0.7vh;
+        width: 4vh;
+        transition: transform 0.3s ease;
+    }
+
+    .icon:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
 }
+
+/*Para móvil*/
