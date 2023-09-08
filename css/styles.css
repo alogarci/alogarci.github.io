@@ -412,8 +412,8 @@ html {
         display: flex;
         flex-direction: column;
     }
-    
-    #sobre-mi-img{
+
+    #sobre-mi-img {
         height: 710px;
         overflow: hidden;
     }
@@ -521,20 +521,20 @@ html {
 
     h1 {
         font-family: 'BaskervilleBold', serif;
-        font-size: 45px;
+        font-size: 30px;
         margin-bottom: 0vh;
     }
 
     h2 {
         font-family: 'BaskervilleBold', serif;
-        font-size: 45px;
+        font-size: 26px;
         display: flex;
         justify-content: center;
         margin-bottom: 0vh;
     }
 
     h3 {
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 0vh;
     }
 
@@ -670,8 +670,8 @@ html {
         display: flex;
         flex-direction: column;
     }
-    
-    #sobre-mi-img{
+
+    #sobre-mi-img {
         height: 710px;
         overflow: hidden;
     }
@@ -681,7 +681,14 @@ html {
         margin-right: 0vh;
     }
 
-    .proyecto-games {
+    .proyecto-games-par {
+        margin-left: 2vh;
+        margin-right: 2vh;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .proyecto-games-impar {
         margin-left: 2vh;
         margin-right: 2vh;
         display: flex;
