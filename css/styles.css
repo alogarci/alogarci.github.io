@@ -12,6 +12,10 @@
     font-family: 'BaskervilleBold';
     src: url('../fonts/BaskervilleBold.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'BaskervilleRegular';
+    src: url('../fonts/BaskervilleRegular.ttf') format('truetype');
+}
 
 html {
     scroll-behavior: smooth;
@@ -21,13 +25,13 @@ html {
 @media screen and (max-width:1920px) {
 
     h1 {
-        font-family: 'BaskervilleBold', serif;
+        font-family: 'Helvetica', sans-serif;
         font-size: 60px;
         margin-bottom: 0vh;
     }
 
     h2 {
-        font-family: 'BaskervilleBold', serif;
+        font-family: 'Helvetica', sans-serif;
         font-size: 60px;
         display: flex;
         justify-content: center;
@@ -72,12 +76,12 @@ html {
     }
 
     body {
-        font-family: 'HelveticaLTStd-Light', sans-seriff;
+        font-family: 'BaskervilleRegular', seriff;
         background-color: #FAFAFF;
     }
 
     header {
-        font-family: 'Helvetica', sans-seriff;
+        font-family: 'BaskervilleBold', seriff;
         background-color: #1e1e1e;
         color: #FAFAFF;
         padding: 6px;
